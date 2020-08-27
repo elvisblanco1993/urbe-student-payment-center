@@ -24,7 +24,7 @@
 
                                 <h5 class="font-weight-bolder">Important information:</h5>
                                 <p>Know your rights and responsibilities as a paying student. Click the link below to learn about the University's Payment and Refund Policy.</p>
-                                <a href="http://">Payment and Refund Policy <i class="fas fa-external-link-alt ml-1"></i></a>
+                                <a href="https://urbe.university/wp-content/uploads/2020/08/UNIVERSITY-CATALOG-FINAL-2020-v3.13.pdf#%5B%7B%22num%22%3A41%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C48%2C383%2C0%5D" target="_blank">Cancellation and Refund Policy <i class="fas fa-external-link-alt ml-1"></i></a>
                             </div>
                             <div class="col-md-4">
                                 @if ( ! is_null( $user->stripe_id ) )

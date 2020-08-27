@@ -25,34 +25,17 @@
     </div>
 @endif
 
-<section class="w-100 bg-primary">
-    <div class="container my-0">
-        <div class="row align-items-center" style="padding-top:10%; padding-bottom:10%">
-            <div class="col-md-6 text-white">
-                <h2>
-                    Bursar Office
-                </h2>
-                <p class="lead">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, repellat reprehenderit adipisci, iure deleniti omnis perspiciatis officiis ad veniam nemo repudiandae aliquam incidunt doloremque esse cumque inventore numquam quo labore.
-                </p>
-            </div>
-            <div class="col-md-6">
-                <img
-                    class="img-fluid shadow rounded"
-                    src="{{ asset('img/bruce-mars-FWVMhUa_wbY-unsplash_edited.jpg') }}"
-                    alt="Female student looking at laptop"
-                    style="width: 100%">
-            </div>
-        </div>
-    </div>
-</section>
-
 <div class="container my-0">
-    <div class="row" style="padding-top:10%; padding-bottom:10%">
-        <div class="col-md-6">
-            <h2>Payment Options</h2>
+    <div class="row align-items-center" style="padding-top:10%; padding-bottom:10%">
+        <div class="col-md-6 text-primary">
+            <h4>The university’s financial services advisors is available during office hours to assist you with any questions you may have, and to help you with payment arrangements when necessary.</h4>
+            <a
+                class="lead"
+                href="https://urbe.university/wp-content/uploads/2020/08/UNIVERSITY-CATALOG-FINAL-2020-v3.13.pdf#%5B%7B%22num%22%3A41%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C48%2C741%2C0%5D"
+                target="_blank">
+                Learn more
+                <i class="fas fa-external-link-alt ml-1"></i></a>
         </div>
-
         <div class="col-md-4 offset-2 bg-white rounded shadow-sm py-4">
             <h4 class="text-primary font-weight-bolder">Contact</h4>
             <p class="lead font-weight-bold mb-1">Bursar Office</p>
