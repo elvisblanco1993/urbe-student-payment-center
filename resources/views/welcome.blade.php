@@ -36,7 +36,7 @@
                 Learn more
                 <i class="fas fa-external-link-alt ml-1"></i></a>
         </div>
-        <div class="col-md-4 offset-2 bg-white rounded shadow-sm py-4">
+        <div class="col-sm-12 col-md-4 offset-md-2 bg-white rounded shadow-sm py-4">
             <h4 class="text-primary font-weight-bolder">Contact</h4>
             <p class="lead font-weight-bold mb-1">Bursar Office</p>
             <p class="mb-1"><a href="https://g.page/urbeuniversity?share" target="_blank">11430 NW 20<sup>st</sup> Street, Suite 150 <br> Sweetwater, Florida 33172</a></p>
