@@ -7,7 +7,7 @@
             <h1 class="display-4 text-white">{{ config('app.name', 'Student Payment Center') }}</h1>
             <p class="lead text-white">Manage your payment information.</p>
             <button
-                class="btn btn-lg btn-primary"
+                class="btn btn-lg btn-light font-weight-bolder"
                 onclick="window.location.href='{{ url('login') }}'">
                 PORTAL LOGIN
             </button>

@@ -73,7 +73,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link rounded px-3 mx-2 text-primary bg-warning" style="background-color: #082442" href="{{ route('login') }}">{{ __('Portal Login') }}</a>
+                                <a class="nav-link rounded px-3 mx-2 text-white" href="{{ route('login') }}">{{ __('Portal Login') }}</a>
                             </li>
                         @else
                             <li class="nav-item dropdown">
