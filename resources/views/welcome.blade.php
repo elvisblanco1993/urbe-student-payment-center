@@ -17,12 +17,14 @@
 
 {{-- Display banner only when there is data on the database --}}
 @if ( ! is_null( $next_start ) )
-    <div class="bg-white text-center">
-        <h3 class="font-weight-bolder py-2 px-2 text-primary my-0">
-            <i class="fas fa-clock fa-pulse"></i>
-            Attention! {{$semester_name}} starts in {{ $start_date }} days. Talk to your advisor to enroll in class today.
-        </h3>
-    </div>
+    @if ( ! is_null( $start_date ) && $start_date < 31 )
+        <div class="bg-white text-center">
+            <h3 class="font-weight-bolder py-2 px-2 text-primary my-0">
+                <i class="fas fa-clock fa-pulse"></i>
+                Attention! {{$semester_name}} starts in {{ $start_date }} days. Talk to your advisor to enroll in class today.
+            </h3>
+        </div>
+    @endif
 @endif
 
 <div class="container my-0">
