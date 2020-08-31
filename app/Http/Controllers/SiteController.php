@@ -23,7 +23,7 @@ class SiteController extends Controller
              * Automatically change the semester
              */
             if ( Carbon::parse($next_start->semester_starts)->isPast() === TRUE ) {
-                DB::table('start_date')->where('is_past', false)->update(['is_past' => true]);
+                DB::table('start_date')->where('semester_starts', $next_start->semester_Starts)->where('is_past', false)->update(['is_past' => true]);
             }
 
             return view('welcome', [
