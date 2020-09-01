@@ -8,7 +8,7 @@
             <h2 class="font-weight-bolder mt-4 mb-4">
                 {{ __('Welcome back, ') . explode(' ', $user->name)[0] . '!' }}
             </h2>
-            <div class="alert alert-info"><u>How-to</u>: Use the <i>"MANAGE PAYMENT INFORMATION"</i> button to manage your current payments and cards.</div>
+            <div class="alert alert-info font-weight-bolder">Use the <u>"MANAGE MY ACCOUNT"</u> button to manage your current payments and cards.</div>
             <div class="card">
 
                 <div class="card-body">
@@ -30,9 +30,9 @@
                                 @if ( ! is_null( $user->stripe_id ) )
                                     <form action="{{ url('/billing') }}" method="post">
                                         @csrf
-                                        <button type="submit" class="btn btn-success btn-block my-2">
+                                        <button type="submit" class="btn btn-lg btn-success btn-block my-2 font-weight-bolder">
                                             <i class="fas fa-wallet mr-2"></i>
-                                            MANAGE PAYMENT INFORMATION
+                                            MANAGE MY ACCOUNT
                                         </button>
                                     </form>
                                 @endif

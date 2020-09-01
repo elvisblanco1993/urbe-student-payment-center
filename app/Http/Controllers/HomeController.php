@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\WelcomeEmail;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -59,6 +61,9 @@ class HomeController extends Controller
         $user = User::find(Auth::user()->id);
         $user->stripe_id = $request->get('strid');
         $user->save();
+
+        // Send welcome email to student
+        Mail::to($request->user())->send(new WelcomeEmail($user->email));
 
         return redirect()->route('home');
     }

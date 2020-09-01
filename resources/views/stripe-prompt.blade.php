@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container my-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -25,7 +25,7 @@
                             @enderror
                         </div>
                         <div class="form-group d-flex justify-content-end">
-                            <button type="submit" class="btn btn-success">Update account</button>
+                            <button type="submit" class="btn btn-success">{{ _('UPDATE ACCOUNT') }}</button>
                         </div>
                     </form>
                 </div>
