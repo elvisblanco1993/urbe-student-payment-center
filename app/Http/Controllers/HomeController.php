@@ -55,7 +55,7 @@ class HomeController extends Controller
     public function saveStripeId(Request $request)
     {
         $request->validate([
-            'strid' => 'required|starts_with:cus_',
+            'strid' => 'required|starts_with:cus_|unique:users,stripe_id',
         ]);
 
         $user = User::find(Auth::user()->id);
