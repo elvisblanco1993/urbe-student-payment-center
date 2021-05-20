@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'SiteController@site');
 
+Route::get('/pay/application-fee', function () {
+    return view('application-fee');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
